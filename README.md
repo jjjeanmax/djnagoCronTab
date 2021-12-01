@@ -14,7 +14,7 @@ Django-cron позволяет запускать код Django / Python на р
 
     `$ pip install -r requirements.txt`
 
-3. Выполнить команду для выполнения миграций из деректории **led_box_finder_back**:
+3. Выполнить команду для выполнения миграций из деректории :
 
     `$ python manage.py migrate`
 
