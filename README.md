@@ -1,35 +1,31 @@
 # djnagoCronTab
 
-Django-cron позволяет запускать код Django / Python на регулярной основе, 
-доказывая базовые возможности для отслеживания и выполнения задач.
- Это ни в коем случае не замена таких очередей, как Celery.
+Django-cron allows you to run Django/Python code on a regular basis,
+proving the basic ability to track and complete tasks.
+  It is by no means a replacement for queues like Celery.
  
-## Старт
+## Start
 
-1. Создать и активировать виртуальное окружение:
+1. Create and activate virtual environment:
 
-    `$ python -m venv venv`
+    `python -m venv venv`
 
-2. Установить пакеты:
+2. Install packages:
 
-    `$ pip install -r requirements.txt`
+    `pip install -r requirements.txt`
 
-3. Выполнить команду для выполнения миграций из деректории :
+3. Run migrations:
 
-    `$ python manage.py migrate`
+    `python manage.py migrate`
 
-4. Создать статичные файлы: 
+4. Create superuser:
 
-    `$ python manage.py collectstatic`
+    `python manage.py createsuperuser`
 
-5. Создать суперпользователя:
+4. Create config file:
 
-    `$ python manage.py createsuperuser`
+    `configs.json`
 
-6. Добавить задачу:
-
-    `$ python manage.py crontab add`
-
-7. Запустить сервер:
-
+6. Start django server:
+    
     `$ python manage.py runserver`
